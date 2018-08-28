@@ -1,0 +1,8 @@
+.marginTop15vh{margin-top:15vh;}
+#accueil{background-color: red;}
+#service{background-color: blue;}
+#apropos{background-color: yellow;}
+#info{background-color: green;}
+#contact{background-color: orange;}
+
+header{background-color: transparent; padding-top: 0px;
