@@ -1,6 +1,12 @@
 <?php ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-  <?php echo $this->Html->link("accueil", "#", ['class'=>"navbar-brand"])?>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <?php 
+echo $this->Html->link(
+    $this->Html->image("logo.jpg", ["class"=>"maxHeight60px"]),
+    "#", array('escape' => false)
+);
+  ?>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,11 +25,13 @@
 
       </li>
       <li class="nav-item">
+                <?php echo $this->Html->link(__("Équipe"),"#equipe");?>
+
+      </li>
+      <li class="nav-item">
                 <?php echo $this->Html->link(__("Contact"),"#contact");?>
 
       </li>
-
-
     </ul>
   </div>
 </nav>
