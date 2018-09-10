@@ -1,9 +1,10 @@
 <?php /*Bloc Accueil*/ ?>
 <div class="" id="accueil" style="height: 92.5vh">
 	<div class="container text-center">
-		<?php echo $this->Html->image("logo.jpg"); ?>
+		<p class="fpBig text-center"><?php echo __("FP");?></p>
+		<?php //echo $this->Html->image("logo.jpg"); ?>
 		<h1 class="text-center">
-			<?php echo __("Fortin et Pomerleau services financiers est un bureau de consultation en financement d’entreprise et investissement privé.") ?>
+			<?php echo __("Fortin et Pomerleau") ?>
 		</h1>
 
 	</div>
@@ -13,27 +14,37 @@
 <?php echo $this->element('menu'); ?>
 
 <?php /*Bloc service*/ ?>
-<div class="" id="service" style="height: 500px">
+<div class="minHeight500" id="service">
 	<div class="container">
-		<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="marginTop3em"><?php echo __("NOS SERVICES");?></h2>
 
+				<h3><?php echo __("Fortin et Pomerleau services financiers est un bureau de consultation en financement d’entreprise et investissement privé.") ?></h3>
+
+				<ul>
+					<li><?php echo __("Conseils financiers;");?></li>
+					<li><?php echo __("Aide à la préparation d'un projet de financement;");?></li>
+					<li><?php echo __("Négociation avec les banques;");?></li>
+					<li><?php echo __("Financements bancaires traditionnels;");?></li>
+					<li><?php echo __("Financements privés;");?></li>
+					<li><?php echo __("Crédit-bail de tout genre.");?></li>
+				</ul>
+			</div>
 		</div>
-		<h2><?php echo __("NOS SERVICES");?></h2>
-		<ul>
-			<li><?php echo __("Conseils financiers;");?></li>
-			<li><?php echo __("Aide à la préparation d'un projet de financement;");?></li>
-			<li><?php echo __("Négociation avec les banques;");?></li>
-			<li><?php echo __("Financements bancaires traditionnels;");?></li>
-			<li><?php echo __("Financements privés;");?></li>
-			<li><?php echo __("Crédit-bail de tout genre.");?></li>
-		</ul>
 	</div>
 </div>
 
 <?php /*Bloc A propos*/ ?>
-<div class="marginTop15vh" id="apropos" style="height: 500px">
+<div class="marginTop15vh minHeight500" id="apropos">
 	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="marginTop3em"><?php echo __("À PROPOS");?></h2>
 
+
+			</div>
+		</div>
 	</div>
 
 
@@ -41,16 +52,22 @@
 
 
 <?php /*Bloc Info*/ ?>
-<div class="marginTop15vh" id="info" style="height: 500px">
-	<div class="container"></div>
+<div class="marginTop15vh minHeight500" id="info" style="height: 500px">
+	<div class="container">
+		<div class="col-xs-12">
+			<h2 class="marginTop3em"><?php echo __("INFO");?></h2>
+
+
+		</div>
+	</div>
 
 
 </div>
 
 <?php /*Bloc Equipe*/ ?>
-<div class="marginTop15vh" id="equipe" >
+<div class="marginTop15vh minHeight500" id="equipe">
 	<div class="container">
-		<div class="row ">
+		<div class="row marginTop3em">
 
 			<div class="col-xs-12">
 				<h2><?php echo "NOTRE ÉQUIPE"; ?></h2>
@@ -71,7 +88,7 @@
 			</div>
 		</div>
 
-		<div class="row marginTop3em" >
+		<div class="row marginTop3em">
 			<div class="col-xs-6 col-sm-4">
 				<?php echo $this->Html->image("photojo.png", ["class"=>"img-responsive"]); ?>
 			</div>
@@ -91,8 +108,12 @@
 </div>
 
 <?php /*Bloc Contact*/ ?>
-<div class="marginTop15vh" id="contact" style="height: 500px">
-	<div class="container"></div>
+<div class="marginTop15vh minHeight500" id="contact">
+	<div class="container">
+		<div class="col-xs-12">
+			<h2 class="marginTop3em"><?php echo __("CONTACT");?></h2>
 
 
+		</div>
+	</div>
 </div>

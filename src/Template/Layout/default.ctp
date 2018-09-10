@@ -33,6 +33,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->script('jquery.js') ?>
     <?= $this->Html->script('bootstrap/bootstrap.min.js') ?>
+    <?= $this->Html->script('menuHandler.js') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
