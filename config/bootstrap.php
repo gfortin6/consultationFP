@@ -197,3 +197,10 @@ Type::build('timestamp')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+
+Configure::write('captcha.private', '6LfqLXAUAAAAAHRLC4RC9q1OZuqy2ymhi8Pecj2t');
+    
+    
+    
+    
+    

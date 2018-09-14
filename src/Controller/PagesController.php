@@ -28,7 +28,15 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
-
+    var $helpers = array('Html', 'Form');
+    
+    
+    public function home(){        
+    }
+    
+    
+    
+    
     /**
      * Displays a view
      *
@@ -38,7 +46,7 @@ class PagesController extends AppController
      * @throws \Cake\Http\Exception\NotFoundException When the view file could not
      *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
      */
-    public function display(...$path)
+    /*public function display(...$path)
     {
         $count = count($path);
         if (!$count) {
@@ -65,5 +73,5 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
-    }
+    }*/
 }

@@ -22,6 +22,7 @@ p{text-align: justify; color: #333333;}
 .nav-item a, .nav-item:hover a {color:#CCCCCC;}
 .fpBig{font-size: 10em; font-family: serif; color: #CCCCCC; margin: 0px; line-height: 1.25em;}
 .fpSmall{font-size: 3em; font-family: serif; color: #CCCCCC; margin: 0px; line-height: 1.25em;}
+.fpSmall:hover, .fpSmall:active, .fpSmall:focus{color: #CCCCCC; text-decoration: none;} 
 .coverLink{display: block;padding:20px;}
 .marginTop5em{margin-top: 5em;}
 
@@ -34,3 +35,6 @@ p{text-align: justify; color: #333333;}
     width: 100%;
 }
 .minHeight500{min-height: 500px;}
+.innerBlock{padding-top: 5em;padding-bottom: 5em;}
+.btn-primary {background-color: #333333; color: #CCCCCC; border-color: #333333; padding: 1em; margin-top: 1em;} 
+.btn-primary:hover, .btn-primary:active,.btn-primary:focus{background-color: #111111; border-color: #333333;}
