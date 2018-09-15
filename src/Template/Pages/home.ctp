@@ -114,32 +114,35 @@
 			<h2 class=""><?php echo __("CONTACT");?></h2>
 			<?= $this->Flash->render() ?>
 			<?php echo $this->Form->create("Contact", array("url"=>"/contact", "class"=>"form contact_form","role"=>"form"));?>
-			<?php echo $this->Form->input("firstName", array("label"=>false, 'placeholder'=>__("Prénom *"), "class"=>"form-control"));?>
-			<?php 
-			if (isset($errors["firstName"]["_required"]) || isset($errors["firstName"]["_empty"])){ ?>
+			<?php echo $this->Form->control("firstName", array("label"=>false, 'placeholder'=>__("Prénom *"), "class"=>"form-control"));?>
+			<?php
+if (isset($errors["firstName"]["_required"]) || isset($errors["firstName"]["_empty"])) {
+    ?>
 					<p class="error"><?= $errors["firstName"]["_required"] ?></p>
 			<?php }?>
-			<?php echo $this->Form->input("lastName", array("label"=>false, 'placeholder'=>__("Nom *"),  "class"=>"form-control"));?>
-			<?php 
-			if (isset($errors["lastname"]["_required"]) || isset($errors["lastname"]["_empty"])){ ?>
+			<?php echo $this->Form->control("lastName", array("label"=>false, 'placeholder'=>__("Nom *"),  "class"=>"form-control"));?>
+			<?php
+if (isset($errors["lastname"]["_required"]) || isset($errors["lastname"]["_empty"])) {
+    ?>
 					<p class="error"><?= $errors["lastname"]["_required"] ?></p>
 			<?php }?>
-			<?php echo $this->Form->input("email", array("label"=>false, 'placeholder'=>__("Courriel *"),  "class"=>"form-control"));?>
-			<?php 
-			if (isset($errors["email"]["_required"]) || isset($errors["email"]["_empty"])){ ?>
+			<?php echo $this->Form->control("email", array("label"=>false, 'placeholder'=>__("Courriel *"),  "class"=>"form-control"));?>
+			<?php
+if (isset($errors["email"]["_required"]) || isset($errors["email"]["_empty"])) {
+    ?>
 					<p class="error"><?= $errors["email"]["_required"] ?></p>
 			<?php }?>
-			<?php echo $this->Form->input("company", array("label"=>false, 'placeholder'=>__("Compagnie (facultatif)"), "class"=>"form-control"));?>
-			<?php echo $this->Form->input("phoneNumber", array("label"=>false, 'placeholder'=>__("Téléphone (facultatif)"), "class"=>"form-control"));?>
-			<?php echo $this->Form->input("message", array("label"=>false, 'placeholder'=>__("Message *"),"rows"=>6, "class"=>"form-control"));?>
-            <?php 
-            if (isset($errors["message"]["_required"]) || isset($errors["message"]["_empty"])){ ?>
+			<?php echo $this->Form->control("company", array("label"=>false, 'placeholder'=>__("Compagnie (facultatif)"), "class"=>"form-control"));?>
+			<?php echo $this->Form->control("phoneNumber", array("label"=>false, 'placeholder'=>__("Téléphone (facultatif)"), "class"=>"form-control"));?>
+			<?php echo $this->Form->control("message", array("label"=>false, 'placeholder'=>__("Message *"),"rows"=>6, "class"=>"form-control"));?>
+            <?php
+            if (isset($errors["message"]["_required"]) || isset($errors["message"]["_empty"])) {
+                ?>
 					<p class="error"><?= $errors["message"]["_required"] ?></p>
 			<?php }?>
-           <?php /*<div class="g-recaptcha"
+           <div class="g-recaptcha"
 				data-sitekey="6LfqLXAUAAAAAGjojFzfUJNYZnqrWfvYlF0px7Xd"></div>
-            */?>
-            <?php echo $this->Form->input(__('Envoyer'), array("label" => false, "type" => "submit", "class" => 'btn btn-primary')); ?>
+            <?php echo $this->Form->control(__('Envoyer'), array("label" => false, "type" => "submit", "class" => 'btn btn-primary')); ?>
 	        <?php echo $this->Form->end(); ?>
 		</div>
 	</div>

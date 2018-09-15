@@ -15,9 +15,9 @@
 namespace App\Controller;
 
 use Cake\Core\Configure;
-use Cake\Http\Exception\ForbiddenException;
-use Cake\Http\Exception\NotFoundException;
-use Cake\View\Exception\MissingTemplateException;
+use Cake\View\Helper\FlashHelper;
+use Cake\Validation\Validator;
+use Cake\Mailer\Email;
 
 /**
  * Static content controller
@@ -35,6 +35,98 @@ class PagesController extends AppController
     }
     
     
+    public function contact()
+    {
+        $errors = null;
+        if (! empty($this->request->data)) {
+            
+            if ($this->validateCaptcha($this->request->data['g-recaptcha-response'])) {
+                $errors = $this->validateForm();
+                if (empty($errors)) { // as usual data save call
+                    $donnees = $this->request->data;
+                    $from = $donnees['email'];
+                    $to = 'gfortin6@gmail.com';
+                    $subject = "Demande d'information";
+                    
+                    $headers = 'MIME-Version: 1.0' . "\r\n";
+                    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+                    $headers .= 'From: ' . strip_tags($from) . "\r\n" . 'Reply-To: ' . strip_tags($from) . "\r\n";
+                    
+                    
+                    $message = "<html><body>
+                     <h3>Formulaire contactez-nous </h3>".
+                     "<p>Prénom : " . strip_tags($donnees["firstName"]) . "</p>" .
+                     "<p>Nom : " . strip_tags($donnees["lastName"]) . "</p>" .
+                     "<p>Téléphone : " . strip_tags($donnees["phoneNumber"]) . "</p>" .
+                     "<p>Nom de l'entreprise : " . strip_tags($donnees["company"]) . "</p><hr>" .
+                     "<p>".strip_tags($donnees["message"]) . "</p><hr>" .
+                     "<p>***Cette notification est dû à l'envoie du formulaire «contactez-nous» du site fortinpomerleau.ca </p></body></html>";
+                    
+                    mail($to, $subject, $message, $headers);
+                    $this->Flash->set(__('Votre message a bien été envoyé.'), array(
+                        'class' => 'notice success'
+                    ));
+                } else { // or
+                    $this->set('errors', $errors);
+                    
+                    $this->Flash->set(__("Erreurs présentes"), array(
+                        'class' => 'cake-error'
+                    ));
+                }
+            } else { // or
+                $this->Flash->set(__("Erreurs présentes"), array(
+                    'class' => 'cake-error'
+                ));
+            }
+        }
+       $this->redirect("/#contact");
+    }
+    
+    private function validateForm()
+    {
+        $validator = new Validator();
+        $validator
+        ->add('email', 'validFormat', [
+            'rule' => 'email',
+            'message' => __("Le format du courriel est invalide")
+        ])
+        ->notEmpty([
+            'firstName' => [
+                'message' => __("Ce champ ne peut être vide."),
+            ],
+            'lastName' => [
+                'message' => __("Ce champ ne peut être vide."),
+            ],
+            'email' => [
+                'message' => __("Ce champ ne peut être vide."),
+            ],
+            'message' => [
+                'message' => __("Ce champ ne peut être vide."),
+            ]]);
+        
+        $errors = $validator->errors($this->request->getData());
+        return $errors;
+    }
+    
+    private function validateCaptcha($response)
+    {
+        $private = Configure::read('captcha.private');
+        $captchaData = array(
+            'secret' => urlencode(Configure::read('captcha.private')),
+            'response' => urlencode($response),
+            'remoteip' => urlencode($_SERVER["REMOTE_ADDR"])
+        );
+        $ch = curl_init();
+        
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $captchaData);
+        $httpResponse = curl_exec($ch);
+        curl_close($ch);
+        
+        return json_decode($httpResponse)->success;
+    }
     
     
     /**
