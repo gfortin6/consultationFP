@@ -21,21 +21,17 @@ $cakeDescription = "Fortin Pomerleau";
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>    
-        <?= $cakeDescription ?>:
+        <?= $cakeDescription ?>
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
+
     <?= $this->Html->css('bootstrap/bootstrap.min.css') ?>
     <?= $this->Html->css('custom.css') ?>
 
-    <?= $this->Html->script('jquery.js') ?>
-    <?= $this->Html->script('bootstrap/bootstrap.min.js') ?>
-    <?= $this->Html->script('menuHandler.js') ?>
+
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
 </head>
 <body>
 
@@ -45,5 +41,10 @@ $cakeDescription = "Fortin Pomerleau";
     </div>
     <footer>
     </footer>
+        <?= $this->Html->script('jquery.js') ?>
+    <?= $this->Html->script('bootstrap/bootstrap.min.js') ?>
+    <?= $this->Html->script('menuHandler.js') ?>
+        <?= $this->fetch('script') ?>
+
 </body>
 </html>

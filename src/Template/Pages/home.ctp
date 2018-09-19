@@ -1,12 +1,11 @@
 <?php /*Bloc Accueil*/ ?>
-<div class="" id="accueil" style="height: 92.5vh">
-	<div class="container innerBlock text-center">
+<div class="bgblack" id="accueil">
+	<div class="container innerBlock text-center ">
 		<p class="fpBig text-center"><?php echo __("FP");?></p>
 		<?php //echo $this->Html->image("logo.jpg"); ?>
-		<h1 class="text-center">
+		<h1 class="text-center ">
 			<?php echo __("Fortin Pomerleau") ?>
 		</h1>
-
 	</div>
 
 
@@ -35,15 +34,13 @@
 	</div>
 </div>
 
-<?php /*Bloc A propos*/ ?>
+<?php /*Bloc Info*/ ?>
 <div class="marginTop15vh minHeight500" id="apropos">
 	<div class="container innerBlock">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2 class=""><?php echo __("À PROPOS");?></h2>
+		<div class="col-xs-12">
+			<h2 class=""><?php echo __("À PROPOS");?></h2>
 
 
-			</div>
 		</div>
 	</div>
 
@@ -52,7 +49,7 @@
 
 
 <?php /*Bloc Info*/ ?>
-<div class="marginTop15vh minHeight500" id="info" style="height: 500px">
+<div class="marginTop15vh minHeight500" id="info" >
 	<div class="container innerBlock">
 		<div class="col-xs-12">
 			<h2 class=""><?php echo __("INFO");?></h2>
@@ -76,7 +73,7 @@
 		</div>
 		<div class="row ">
 			<div class="col-xs-6 col-sm-4">
-				<?php echo $this->Html->image("photojean.png", ["class"=>"img-responsive"]); ?>
+				<?php echo $this->Html->image("photojean.png", ["class"=>"img-fluid"]); ?>
 			</div>
 			<div class="col-xs-6 col-sm-8">
 				<h3>
@@ -90,7 +87,7 @@
 
 		<div class="row ">
 			<div class="col-xs-6 col-sm-4">
-				<?php echo $this->Html->image("photojo.png", ["class"=>"img-responsive"]); ?>
+				<?php echo $this->Html->image("photojo.png", ["class"=>"img-fluid"]); ?>
 			</div>
 			<div class="col-xs-6 col-sm-8">
 				<h3>

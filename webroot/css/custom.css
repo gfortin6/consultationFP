@@ -1,6 +1,6 @@
 .marginTop15vh{margin-top:15vh;}
 body{background-image: url(../img/background.jpg); background-size: cover; background-repeat: no-repeat;
-    background-attachment: fixed;}
+    background-attachment: fixed; overflow-x: hidden;}
 #service{background-color: #CCCCCC;}
 #apropos{background-color: #CCCCCC;}
 #info{background-color: #CCCCCC;}
@@ -12,7 +12,7 @@ header{background-color: transparent; padding-top: 0px;}
 h1{color: #CCCCCC;}
 h2{text-align: center;}
 
-#accueil .container{padding-top:22vh;}
+#accueil .container{padding-top:18vh;}
 .marginTop3em{margin-top: 3em;}
 p{text-align: justify; color: #333333;}
 
@@ -38,3 +38,23 @@ p{text-align: justify; color: #333333;}
 .innerBlock{padding-top: 5em;padding-bottom: 5em;}
 .btn-primary {background-color: #333333; color: #CCCCCC; border-color: #333333; padding: 1em; margin-top: 1em;} 
 .btn-primary:hover, .btn-primary:active,.btn-primary:focus{background-color: #111111; border-color: #333333;}
+
+
+@media screen and (max-width: 768px) {
+    #accueil .container{padding-top:4vh;}
+    .fpBig{font-size: 4em;}
+}
+
+@media screen and (max-width: 992px) {
+    #accueil .container{padding-top:6vh;}
+    .fpBig{font-size: 7em;}
+
+}
+
+@media screen and (max-width: 1200px) {
+    #accueil .container{padding-top:=8vh;}
+    .fpBig{font-size: 7em;}
+
+}
+
+
