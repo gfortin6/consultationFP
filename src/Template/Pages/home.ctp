@@ -7,8 +7,6 @@
 			<?php echo __("Fortin Pomerleau") ?>
 		</h1>
 	</div>
-
-
 </div>
 <?php echo $this->element('menu'); ?>
 

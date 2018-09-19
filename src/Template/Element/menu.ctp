@@ -2,7 +2,7 @@
 <div id="stick-here"></div>
 
 <nav class="navbar navbar-expand-lg navbar-dark " id="stickThis">
-	<?php echo $this->Html->link("FP", "#",["class"=>"fpSmall"]);?>
+	<?php echo $this->Html->link("FP", "#",["class"=>"fpSmall brand"]);?>
   <?php 
 //echo $this->Html->link(
 //    $this->Html->image("logo.jpg", ["class"=>"maxHeight60px"]),
