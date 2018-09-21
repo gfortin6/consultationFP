@@ -1,5 +1,7 @@
 .marginTop15vh{margin-top:15vh;}
-body{
+.bgblack{
+background-image: url("../img/background_lg.jpg");
+	
 background-repeat: no-repeat; 
 background-position: center;
 background-attachment: fixed;       
@@ -9,12 +11,12 @@ webkit-background-size: cover;
 background-size: cover;  
 }
     
-#accueil{height: 91vh;}
-#service{background-color: #CCCCCC;}
+#accueil{height: 100vh;}
+#service{background-color: #888888;}
 #apropos{background-color: #CCCCCC;}
-#info{background-color: #CCCCCC;}
+#info{background-color: #888888;}
 #equipe{background-color: #CCCCCC;}
-#contact{background-color: #CCCCCC;}
+#contact{background-color: #888888;}
 
 h1{color: #CCCCCC;}
 h2{text-align: center;}
@@ -57,7 +59,7 @@ p{text-align: justify; color: #333333;}
     #accueil .container{padding-top:4vh;}
     .fpBig{font-size: 4em;}
     #accueil{height: 90vh;}
-        body{background-image: url("../img/background_md.jpg");}
+        .bgblack{background-image: url("../img/background_xs.jpg");}
 
 }
 
@@ -65,7 +67,7 @@ p{text-align: justify; color: #333333;}
     #accueil .container{padding-top:6vh;}
     .fpBig{font-size: 7em;}
 #accueil{height: 87vh;}
-        body{background-image: url("../img/background_md.jpg");}
+        .bgblack{background-image: url("../img/background_sm.jpg");}
 
 
 }
@@ -74,7 +76,7 @@ p{text-align: justify; color: #333333;}
     #accueil .container{padding-top:8vh;}
     .fpBig{font-size: 7em;}
     #accueil{height: 89vh;}
-        body{background-image: url("../img/background_md.jpg");}
+        .bgblack{background-image: url("../img/background_md.jpg");}
     
 }
 

@@ -7,8 +7,9 @@
 			<?php echo __("Fortin Pomerleau") ?>
 		</h1>
 	</div>
+	<?php echo $this->element('menu'); ?>
 </div>
-<?php echo $this->element('menu'); ?>
+
 
 <?php /*Bloc service*/ ?>
 <div class="minHeight500" id="service">
@@ -33,7 +34,7 @@
 </div>
 
 <?php /*Bloc Info*/ ?>
-<div class="marginTop15vh minHeight500" id="apropos">
+<div class=" minHeight500" id="apropos">
 	<div class="container innerBlock">
 		<div class="col-xs-12">
 			<h2 class=""><?php echo __("À PROPOS");?></h2>
@@ -47,7 +48,7 @@
 
 
 <?php /*Bloc Info*/ ?>
-<div class="marginTop15vh minHeight500" id="info" >
+<div class=" minHeight500" id="info" >
 	<div class="container innerBlock">
 		<div class="col-xs-12">
 			<h2 class=""><?php echo __("INFO");?></h2>
@@ -60,7 +61,7 @@
 </div>
 
 <?php /*Bloc Equipe*/ ?>
-<div class="marginTop15vh minHeight500" id="equipe">
+<div class=" minHeight500" id="equipe">
 	<div class="container innerBlock">
 		<div class="row ">
 
@@ -103,7 +104,7 @@
 </div>
 
 <?php /*Bloc Contact*/ ?>
-<div class="marginTop15vh minHeight500" id="contact">
+<div class=" minHeight500" id="contact">
 	<div class="container innerBlock">
 		<div class="col-xs-12  text-center">
 			<h2 class=""><?php echo __("CONTACT");?></h2>
