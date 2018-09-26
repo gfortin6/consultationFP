@@ -24,10 +24,6 @@
 
       </li>
       <li class="nav-item">
-                <?php echo $this->Html->link(__("Info"),"#info", ["class"=>"coverLink"]);?>
-
-      </li>
-      <li class="nav-item">
                 <?php echo $this->Html->link(__("Équipe"),"#equipe", ["class"=>"coverLink"]);?>
 
       </li>

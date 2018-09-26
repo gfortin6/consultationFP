@@ -24,15 +24,15 @@
 				<div class="col-xs-12">
 					<h2 class=""><?php echo __("NOS SERVICES");?></h2>
 
-					<h3><?php echo __("Fortin et Pomerleau services financiers est un bureau de consultation en financement d’entreprise et investissement privé.") ?></h3>
+					<h3><?php echo __("Fortin et Pomerleau est un bureau de consultation en financement d’entreprises et immobilier.") ?></h3>
 
 					<ul>
-						<li><?php echo __("Conseils financiers;");?></li>
-						<li><?php echo __("Aide à la préparation d'un projet de financement;");?></li>
-						<li><?php echo __("Négociation avec les banques;");?></li>
-						<li><?php echo __("Financements bancaires traditionnels;");?></li>
-						<li><?php echo __("Financements privés;");?></li>
-						<li><?php echo __("Crédit-bail de tout genre.");?></li>
+						<li><?php echo __("Conseils financiers");?></li>
+						<li><?php echo __("Aide à la préparation d’un projet de financement");?></li>
+						<li><?php echo __("Négociation avec les banques");?></li>
+						<li><?php echo __("Financements bancaires traditionnels");?></li>
+						<li><?php echo __("Financement avec des Fonds d’investissement");?></li>
+						<li><?php echo __("Achat/vente/Fusion entreprises");?></li>
 					</ul>
 				</div>
 			</div>
@@ -52,19 +52,6 @@
 
 	</div>
 
-
-<?php /*Bloc Info*/ ?>
-<div class=" minHeight500" id="info">
-		<div class="container innerBlock">
-			<div class="col-xs-12">
-				<h2 class=""><?php echo __("INFO");?></h2>
-
-
-			</div>
-		</div>
-
-
-	</div>
 
 <?php /*Bloc Equipe*/ ?>
 <div class=" minHeight500" id="equipe">
@@ -86,7 +73,7 @@
 					<?php echo __("Jean Fortin"); ?>
 				</h3>
 					<p>
-					<?php echo __("Avec plus de 35 années d’expérience en financement d’entreprises, analyse financière, développement des affaires et gestion d’équipes de vente pour de grandes institutions, j'offre mes services en recherche de financement, financement privé, consultation, coaching / mentorat d'équipe de gestion"); ?>
+					<?php echo __("Avec plus de 38 années d’expérience en financement d’entreprises, négociation, développement des affaires et gestion d’équipe de ventes pour de grandes institutions je veux partager mes compétences, connaissances et mon réseau de contacts avec les entrepreneurs et leur permettent de réaliser leur projet d’entreprises."); ?>
 				</p>
 				</div>
 			</div>
