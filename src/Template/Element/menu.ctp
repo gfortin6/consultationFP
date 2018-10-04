@@ -17,12 +17,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <?php echo $this->Html->link(__("Service"),"#service", ["class"=>"coverLink"]);?>
+        <?php echo $this->Html->link(__("Services"),"#service", ["class"=>"coverLink"]);?>
       </li>
+     <?php /*
       <li class="nav-item">
                 <?php echo $this->Html->link(__("À propos"),"#apropos", ["class"=>"coverLink"]);?>
 
       </li>
+      */?>
       <li class="nav-item">
                 <?php echo $this->Html->link(__("Équipe"),"#equipe", ["class"=>"coverLink"]);?>
 

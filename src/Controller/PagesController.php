@@ -45,7 +45,7 @@ class PagesController extends AppController
                 if (empty($errors)) { // as usual data save call
                     $donnees = $this->request->data;
                     $from = $donnees['email'];
-                    $to = 'gfortin6@gmail.com';
+                    $to = 'jonathan@fortinpomerleau.ca';
                     $subject = "Demande d'information";
                     
                     $headers = 'MIME-Version: 1.0' . "\r\n";

@@ -1,5 +1,5 @@
 <div id="bg" >
-	<?php echo $this->Html->image("/img/background_lg.jpg", ['class'=>"bgImage"]);?>
+	<?php echo $this->Html->image("/img/background.jpg", ['class'=>"bgImage"]);?>
 </div>
 <div class="frontDiv">
 
@@ -24,14 +24,14 @@
 				<div class="col-xs-12">
 					<h2 class=""><?php echo __("NOS SERVICES");?></h2>
 
-					<h3><?php echo __("Fortin et Pomerleau est un bureau de consultation en financement d’entreprises et immobilier.") ?></h3>
+					<h3><?php echo __("Fortin Pomerleau est un bureau de consultation en financement d’entreprises et immobilier.") ?></h3>
 
 					<ul>
 						<li><?php echo __("Conseils financiers");?></li>
 						<li><?php echo __("Aide à la préparation d’un projet de financement");?></li>
 						<li><?php echo __("Négociation avec les banques");?></li>
 						<li><?php echo __("Financements bancaires traditionnels");?></li>
-						<li><?php echo __("Financement avec des Fonds d’investissement");?></li>
+						<li><?php echo __("Financements avec des Fonds d’investissement");?></li>
 						<li><?php echo __("Achat/vente/Fusion entreprises");?></li>
 					</ul>
 				</div>
@@ -39,7 +39,8 @@
 		</div>
 	</div>
 
-<?php /*Bloc Info*/ ?>
+<?php /*Bloc a propos*/ ?>
+<?php /*
 <div class=" minHeight500" id="apropos">
 		<div class="container innerBlock">
 			<div class="col-xs-12">
@@ -51,6 +52,7 @@
 
 
 	</div>
+*/?>
 
 
 <?php /*Bloc Equipe*/ ?>
@@ -73,7 +75,7 @@
 					<?php echo __("Jean Fortin"); ?>
 				</h3>
 					<p>
-					<?php echo __("Avec plus de 38 années d’expérience en financement d’entreprises, négociation, développement des affaires et gestion d’équipe de ventes pour de grandes institutions je veux partager mes compétences, connaissances et mon réseau de contacts avec les entrepreneurs et leur permettent de réaliser leur projet d’entreprises."); ?>
+					<?php echo __("Avec plus de 38 années d’expérience en financement d’entreprises, négociation, développement des affaires, gestion d’équipe de ventes pour de grandes institutions et détenteur d’un MBA en financement des PME, je veux partager mes connaissances, compétences et mon réseau de contacts avec les entrepreneurs et leur permettent de réaliser leur projet d’entreprises."); ?>
 				</p>
 				</div>
 			</div>
@@ -122,7 +124,7 @@ if (isset($errors["email"]["_required"]) || isset($errors["email"]["_empty"])) {
     ?>
 					<p class="error"><?= $errors["email"]["_required"] ?></p>
 			<?php }?>
-			<?php echo $this->Form->control("company", array("label"=>false, 'placeholder'=>__("Compagnie (facuSltatif)"), "class"=>"form-control"));?>
+			<?php echo $this->Form->control("company", array("label"=>false, 'placeholder'=>__("Compagnie (facultatif)"), "class"=>"form-control"));?>
 			<?php echo $this->Form->control("phoneNumber", array("label"=>false, 'placeholder'=>__("Téléphone (facultatif)"), "class"=>"form-control"));?>
 			<?php echo $this->Form->control("message", array("label"=>false, 'placeholder'=>__("Message *"),"rows"=>6, "class"=>"form-control"));?>
             <?php
@@ -140,7 +142,3 @@ if (isset($errors["email"]["_required"]) || isset($errors["email"]["_empty"])) {
 </div>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
-<
-<script type="text/javascript">
-$(window).stellar();
-</script>

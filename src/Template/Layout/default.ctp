@@ -12,17 +12,29 @@
  * @since         0.10.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-
 $cakeDescription = "Fortin Pomerleau";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<title>    
         <?= $cakeDescription ?>
     </title>
+<meta property="og:title" content="Fortin Pomerleau" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://fortinpomerleau.ca" />
+<meta property="og:image" content="https://fortinpomerleau.ca/img/og.png" />
+<meta property="og:description" content="Notre équipe d'experts expérimentés peut aller vous rencontrer en entreprise pour discuter de vos besoins en financement et des solutions disponibles." />
+<meta property="fb:app_id" content="2119177981732931" />
+    
+    
+    <?php echo $this->Html->meta ( 'keywords', "Fortin, Pomerleau, Fortin Pomerleau, Fortin et Pomerleau, Financement, 
+Financement d'entreprise, consultation, finance, entreprise, immobilier, financement d'entreprise, financement immobilier, 
+financement d'entreprise et d'immobilier, Jean Fortin, Jonathan Pomerleau, Jean, Jonathan, entreprise, Québec, Quebec, 
+est du Québec, banque, pret, prêt" );?>
     <?= $this->Html->meta('icon') ?>
 
 
@@ -39,8 +51,7 @@ $cakeDescription = "Fortin Pomerleau";
     <div class="congtainer-fluid">
         <?= $this->fetch('content') ?>
     </div>
-    <footer>
-    </footer>
+	<footer> </footer>
         <?= $this->Html->script('jquery.js') ?>
     <?= $this->Html->script('bootstrap/bootstrap.min.js') ?>
     <?= $this->Html->script('menuHandler.js') ?>
