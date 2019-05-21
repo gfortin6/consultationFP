@@ -1,21 +1,5 @@
-.marginTop15vh{margin-top:15vh;}
-.bgblack{
-background-image: url("../img/background_lg.jpg");
-	
-background-repeat: no-repeat; 
-background-position: center;
-background-attachment: fixed;       
-webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;  
-}
-    
-#accueil{height: 91vh;}
-#service{background-color: #888888;}
-#apropos{background-color: #CCCCCC;}
-#equipe{background-color: #CCCCCC;}
-#contact{background-color: #888888;}
+#accueil{height: 100vh;}
+
 
 h1{color: #CCCCCC;}
 h2{text-align: center; font-size: 1.75rem;}
@@ -34,21 +18,6 @@ p{text-align: justify; color: #333333;}
 .coverLink{display: block;padding:20px;}
 .marginTop5em{margin-top: 5em;}
 
-#stickThis {}
-#stickThis.stickTop {
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-}
-#stickThis.stickBottom {
-    margin-top: 0;
-    position: fixed;
-    bottom: 0;
-    z-index: 9999;
-    width: 100%;
-}
 .minHeight500{min-height: 500px;}
 .innerBlock{padding:5em 2em; text-align: justify;}
 .btn-primary {background-color: #333333; color: #CCCCCC; border-color: #333333; padding: 1em; margin-top: 1em;} 
@@ -58,29 +27,39 @@ p{text-align: justify; color: #333333;}
 .frontDiv{position: absolute; top:0; left:0; z-index: 1000; width: 100%;}
 
 .bg{position: fixed;top:0;left: 0; z-index: 0;}
-.bgImage{width: 100%; height: 91vh;}
+.bgImage{width: 100%; height: 100vh;}
 .form-control{margin-top: .5em; margin-bottom: .5em;}
 
-
+.logoBlock{
+    background-color: #363636;
+    height: 100vh;
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 @media only screen and (max-width: 768px) {
-    #accueil .container{padding-top:4vh;}
     .fpBig{font-size: 4em;}
 
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    #accueil .container{padding-top:6vh;}
     .fpBig{font-size: 7em;}
 
 
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    #accueil .container{padding-top:8vh;}
-    .fpBig{font-size: 7em;}
-
-    
+    .fpBig{font-size: 7em;}   
 }
 
+.container-fluid{padding-left:0px;padding-right: 0px;}
 
+.logo{width: 300px; height: auto; margin: auto;}

@@ -1,17 +1,13 @@
 <div id="bg" >
-	<?php echo $this->Html->image("/img/background.jpg", ['class'=>"bgImage"]);?>
+	<?php  echo $this->Html->image("/img/background.jpg", ['class'=>"bgImage"]);?>
 </div>
 <div class="frontDiv">
 
 <?php /*Bloc Accueil*/ ?>
 <div class="" id="accueil">
 
-		<div class="container innerBlock text-center ">
-			<p class="fpBig text-center"><?php echo __("FP");?></p>
-		<?php //echo $this->Html->image("logo.jpg"); ?>
-		<h1 class="text-center ">
-			<?php echo __("Fortin Pomerleau") ?>
-		</h1>
+		<div class="logoBlock">
+			<?php echo $this->Html->image("logo.png", ['class'=>"logo"]); ?>
 		</div>
 
 	</div>

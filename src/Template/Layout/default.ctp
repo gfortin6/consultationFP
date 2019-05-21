@@ -48,7 +48,7 @@ est du Québec, banque, pret, prêt" );?>
 <body>
 
     <?= $this->Flash->render() ?>
-    <div class="congtainer-fluid">
+    <div class="container-fluid">
         <?= $this->fetch('content') ?>
     </div>
 	<footer> </footer>
