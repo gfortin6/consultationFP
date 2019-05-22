@@ -40,6 +40,7 @@ est du Québec, banque, pret, prêt" );?>
 
     <?= $this->Html->css('bootstrap/bootstrap.min.css') ?>
     <?= $this->Html->css('custom.css') ?>
+    <link rel="stylesheet" href="https://use.typekit.net/fgc6ana.css">
 
 
     <?= $this->fetch('meta') ?>

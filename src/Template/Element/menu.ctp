@@ -1,13 +1,10 @@
 <?php ?>
-<div id="stick-here"></div>
-
-<nav class="navbar navbar-expand-lg navbar-dark " id="stickThis">
-	<?php echo $this->Html->link("FP", "#",["class"=>"fpSmall brand"]);?>
+<nav class="navbar navbar-expand-xs navbar-dark fixed-top">
   <?php 
-//echo $this->Html->link(
-//    $this->Html->image("logo.jpg", ["class"=>"maxHeight60px"]),
-//    "#", array('escape' => false)
-//);
+echo $this->Html->link(
+    $this->Html->image("smallLogo.png", ["class"=>"maxHeight60px"]),
+    "#", array('escape' => false)
+);
   ?>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,8 +27,7 @@
 
       </li>
       <li class="nav-item">
-                <?php echo $this->Html->link(__("Contact"),"#contact", ["class"=>"coverLink"]);?>
-
+          <?php echo $this->Html->link(__("Contact"),"#contact", ["class"=>"coverLink"]);?>
       </li>
     </ul>
   </div>
