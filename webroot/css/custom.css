@@ -28,7 +28,8 @@ p{text-align: justify; color: #333333;}
 .fixedBottom{bottom: 0;}
 */
 .navbar{background-color: #2f3e48;}
-.nav-item a, .nav-item:hover a {color:#DDDDDD;}
+.nav-item{text-align: right; margin-right: 15px; }
+.nav-item a, .nav-item:hover a {color:#DDDDDD; font-size: 1.5em;}
 .frontDiv{position: absolute; top:0; left:0; z-index: 1000; width: 100%;}
 
 .bg{position: fixed;top:0;left: 0; z-index: 0;}
@@ -68,3 +69,4 @@ p{text-align: justify; color: #333333;}
 .container-fluid{padding-left:0px;padding-right: 0px;}
 
 .logo{width: 300px; height: auto; margin: auto;}
+.serviceImage{max-width: 50px;}

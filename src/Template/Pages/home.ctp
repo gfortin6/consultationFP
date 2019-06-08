@@ -7,7 +7,7 @@
 <div class="" id="accueil">
 
 		<div class="logoBlock">
-			<?php echo $this->Html->image("logo.png", ['class'=>"logo"]); ?>
+			<?php echo $this->Html->image("logo.png", ['class'=>"logo","title"=>"Logo", "alt"=>"Logo"]); ?>
 		</div>
 
 	</div>
@@ -17,10 +17,38 @@
 <div class="minHeight500" id="service">
 		<div class="container innerBlock">
 			<div class="row">
-				<div class="col-xs-12">
-					<h2 class=""><?php echo __("NOS SERVICES");?></h2>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-12">
+						<h2 class=""><?php echo __("NOS SERVICES");?></h2>
 
-					<h3><?php echo __("Fortin Pomerleau est un bureau de consultation en financement d’entreprises et immobilier.") ?></h3>
+						</div>
+						<div class="col-sm-6">
+							<span><?php echo $this->Html->image("Conseils-financiers.png",["title"=>__("Conseils financiers"), "alt"=>__("Conseils financiers"),"class"=>"serviceImage"]); ?></span>
+							<span><?php echo __("Conseils financiers"); ?></span>
+						</div>
+						<div class="col-sm-6">
+							<span><?php echo $this->Html->image("Financements-bancaires.png",["title"=>__("Financements bancaires traditionnels"), "alt"=>__("Financements bancaires traditionnels"),"class"=>"serviceImage"]); ?></span>
+							<span><?php echo __("Financements bancaires traditionnels"); ?></span>
+						</div>
+						<div class="col-sm-6">
+							<span><?php echo $this->Html->image("Aide-preparation.png",["title"=>__("Aide à la préparation d'un projet de financement"), "alt"=>__("Aide à la préparation d'un projet de financement"),"class"=>"serviceImage"]); ?></span>
+							<span><?php echo __("Aide à la préparation d'un projet de financement"); ?></span>
+						</div>
+						<div class="col-sm-6">
+							<span><?php echo $this->Html->image("Financement-Fonds.png",["title"=>__("Financements avec des Fonds d'investissement"), "alt"=>__("Financements avec des Fonds d'investissement"),"class"=>"serviceImage"]); ?></span>
+							<span><?php echo __("Financements avec des Fonds d'investissement"); ?></span>
+						</div>
+						<div class="col-sm-6">
+							<span><?php echo $this->Html->image("Negociation.png",["title"=>__("Négociation avec les banques"), "alt"=>__("Négociation avec les banques"),"class"=>"serviceImage"]); ?></span>
+							<span><?php echo __("Négociation avec les banques"); ?></span>
+						</div>
+						<div class="col-sm-6">
+							<span><?php echo $this->Html->image("Achat-Vente.png",["title"=>__("Achat / Vente / Fusion d'entreprises"), "alt"=>__("Achat / Vente / Fusion d'entreprises"),"class"=>"serviceImage"]); ?></span>
+							<span><?php echo __("Achat / Vente / Fusion d'entreprises"); ?></span>
+						</div>
+					</div>
+					<?php /*<h3><?php echo __("Fortin Pomerleau est un bureau de consultation en financement d’entreprises et immobilier.") ?></h3>
 
 					<ul>
 						<li><?php echo __("Conseils financiers");?></li>
@@ -29,7 +57,10 @@
 						<li><?php echo __("Financements bancaires traditionnels");?></li>
 						<li><?php echo __("Financements avec des Fonds d’investissement");?></li>
 						<li><?php echo __("Achat/vente/Fusion entreprises");?></li>
-					</ul>
+					</ul> */ ?>
+				</div>
+				<div class="col-sm-6">
+					<?php echo $this->Html->image("Services.jpg", ['class'=>"img-fluid"]); ?>
 				</div>
 			</div>
 		</div>
@@ -39,7 +70,7 @@
 <?php /*
 <div class=" minHeight500" id="apropos">
 		<div class="container innerBlock">
-			<div class="col-xs-12">
+			<div class="col-sm-12">
 				<h2 class=""><?php echo __("À PROPOS");?></h2>
 
 
@@ -56,17 +87,17 @@
 		<div class="container innerBlock">
 			<div class="row ">
 
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<h2><?php echo "NOTRE ÉQUIPE"; ?></h2>
 					<h3><?php echo "Notre équipe d'experts expérimentés peut aller vous rencontrer en entreprise pour discuter de vos besoins en financement et des solutions disponibles."; ?></h3>
 				</div>
 			</div>
 			<br>
 			<div class="row ">
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-sm-6 col-sm-4">
 				<?php echo $this->Html->image("photojean.png", ["class"=>"img-fluid"]); ?>
 			</div>
-				<div class="col-xs-6 col-sm-8">
+				<div class="col-sm-6 col-sm-8">
 					<h3>
 					<?php echo __("Jean Fortin"); ?>
 				</h3>
@@ -77,10 +108,10 @@
 			</div>
 			<br>
 			<div class="row ">
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-sm-6 col-sm-4">
 				<?php echo $this->Html->image("photojo.png", ["class"=>"img-fluid"]); ?>
 			</div>
-				<div class="col-xs-6 col-sm-8">
+				<div class="col-sm-6 col-sm-8">
 					<h3>
 					<?php echo __("Jonathan Pomerleau"); ?>
 				</h3>
@@ -98,7 +129,7 @@
 <?php /*Bloc Contact*/ ?>
 <div class=" minHeight500" id="contact">
 		<div class="container innerBlock">
-			<div class="col-xs-12  text-center">
+			<div class="col-sm-12  text-center">
 				<h2 class=""><?php echo __("CONTACT");?></h2>
 			<?= $this->Flash->render() ?>
 			<?php echo $this->Form->create("Contact", array("url"=>"/contact", "class"=>"form contact_form","role"=>"form"));?>
