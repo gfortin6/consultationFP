@@ -21,12 +21,16 @@ p{text-align: justify; color: #333333;}
 .coverLink{display: block;padding:20px;}
 .marginTop5em{margin-top: 5em;}
 
-.minHeight500{min-height: 500px;}
-.innerBlock{padding:5em 2em; text-align: justify;}
+
 .btn-primary {background-color: #333333; color: #CCCCCC; border-color: #333333; padding: 1em; margin-top: 1em;} 
 .btn-primary:hover, .btn-primary:active,.btn-primary:focus{background-color: #111111; border-color: #333333;}
 .fixedBottom{bottom: 0;}
 */
+
+.minHeight500{min-height: 500px;}
+.innerBlock{padding:5em 2em;}
+.marginTopService{margin-top: 2em;}
+.lblService{font-size:1.5em;}
 .navbar{background-color: #2f3e48;}
 .nav-item{text-align: right; margin-right: 15px; }
 .nav-item a, .nav-item:hover a {color:#DDDDDD; font-size: 1.5em;}
@@ -69,4 +73,57 @@ p{text-align: justify; color: #333333;}
 .container-fluid{padding-left:0px;padding-right: 0px;}
 
 .logo{width: 300px; height: auto; margin: auto;}
-.serviceImage{max-width: 50px;}
+.serviceImage{max-height: 50px; margin:0 auto;}
+.imgBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centering y-axis */
+    align-items :center;
+}
+.bgDarkGrey{
+    background-color: #363636;
+    color: #FFFFFF;
+}
+
+h3{
+    font-size: 2em;
+    padding-bottom:2em;
+
+}
+h2{
+    font-size: 2.5em;
+    padding-bottom:2em;
+
+}
+.txtTeam{
+    font-size: 1.25em;
+}
+
+.socialImg{
+    width: 50px;
+    height: 50px;
+}
+
+.imgIn{
+    background: url("../img/in.png") no-repeat;
+}
+.imgIn:hover{
+    background: url("../img/in-hover.png") no-repeat;
+}
+.imgMail{
+    background: url("../img/mail.png") no-repeat;
+    margin: 0em 2em;
+}
+.imgMail:hover{
+    background: url("../img/mail-hover.png") no-repeat;
+}
+.imgTel{
+    background: url("../img/Tel.png") no-repeat;
+}
+.imgTel:hover{
+    background: url("../img/Tel-hover.png") no-repeat;
+
+}
+.displayFlex{
+    display: flex;
+}

@@ -55,8 +55,7 @@ est du Québec, banque, pret, prêt" );?>
 	<footer> </footer>
         <?= $this->Html->script('jquery.js') ?>
     <?= $this->Html->script('bootstrap/bootstrap.min.js') ?>
-    <?= $this->Html->script('menuHandler.js') ?>
-        <?= $this->fetch('script') ?>
+            <?= $this->fetch('script') ?>
 
 </body>
 </html>
